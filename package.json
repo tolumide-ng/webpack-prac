@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "devDependencies": {
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "css-loader": "^3.0.0",
+    "style-loader": "^0.23.1"
   }
 }
