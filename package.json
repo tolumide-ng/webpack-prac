@@ -5,7 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,12 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "css-loader": "^3.0.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "webpack-dev-server": "^3.7.2"
   }
 }
